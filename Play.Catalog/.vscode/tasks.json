@@ -1,0 +1,13 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "dotnet",
+      "task": "build c:\\Users\\pc\\source\\repos\\dotnet-webapi-main\\Play.Catalog\\src\\Play.Catalog.Service\\Play.Catalog.csproj",
+      "file": "c:\\Users\\pc\\source\\repos\\dotnet-webapi-main\\Play.Catalog\\src\\Play.Catalog.Service\\Play.Catalog.csproj",
+      "group": "build",
+      "problemMatcher": [],
+      "label": "dotnet: build c:\\Users\\pc\\source\\repos\\dotnet-webapi-main\\Play.Catalog\\src\\Play.Catalog.Service\\Play.Catalog.csproj"
+    }
+  ]
+}
