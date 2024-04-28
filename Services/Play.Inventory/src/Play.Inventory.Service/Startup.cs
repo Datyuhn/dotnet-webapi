@@ -2,6 +2,7 @@ using System;
 using System.Net.Http;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -10,6 +11,7 @@ using Microsoft.OpenApi.Models;
 using Play.Common.MassTransit;
 using Play.Common.MongoDB;
 using Play.Inventory.Service.Clients;
+using Play.Inventory.Service.Context;
 using Play.Inventory.Service.Entities;
 using Polly;
 using Polly.Timeout;
@@ -30,12 +32,16 @@ namespace Play.Inventory.Service
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMongo()
-                    .AddMongoRepository<InventoryItem>("inventoryitems")
-                    .AddMongoRepository<CatalogItem>("catalogitems")
-                    .AddMassTransitWithRabbitMq();
+            services.AddMongo().AddMongoRepository<InventoryItem>("inventoryitems")
+                               .AddMongoRepository<CatalogItem>("catalogitems")
+                               .AddMassTransitWithRabbitMq();
 
             AddCatalogClient(services);
+
+            services.AddDbContext<InventoryContext>(options =>
+            {
+                options.UseSqlServer(Configuration.GetConnectionString("InventoryCS"));
+            });
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -58,7 +64,7 @@ namespace Play.Inventory.Service
                     builder.WithOrigins(Configuration[AllowedOriginSetting])
                         .AllowAnyHeader()
                         .AllowAnyMethod();
-                });                
+                });
             }
 
             app.UseHttpsRedirection();

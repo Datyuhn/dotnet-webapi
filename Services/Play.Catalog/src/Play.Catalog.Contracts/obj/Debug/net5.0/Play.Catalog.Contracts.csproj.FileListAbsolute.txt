@@ -8,5 +8,5 @@ C:\Users\Admin\source\repos\dotnet-webapi\Services\Play.Catalog\src\Play.Catalog
 C:\Users\Admin\source\repos\dotnet-webapi\Services\Play.Catalog\src\Play.Catalog.Contracts\obj\Debug\net5.0\Play.Catalog.Contracts.dll
 C:\Users\Admin\source\repos\dotnet-webapi\Services\Play.Catalog\src\Play.Catalog.Contracts\obj\Debug\net5.0\Play.Catalog.Contracts.pdb
 C:\Users\Admin\source\repos\dotnet-webapi\Services\Play.Catalog\src\Play.Catalog.Contracts\obj\Debug\net5.0\ref\Play.Catalog.Contracts.dll
-C:\Users\Admin\source\repos\dotnet-webapi\Services\Play.Catalog\src\Play.Catalog.Contracts\bin\Debug\net5.0\ref\Play.Catalog.Contracts.dll
-C:\Users\Admin\source\repos\dotnet-webapi\Services\Play.Catalog\src\Play.Catalog.Contracts\obj\Debug\net5.0\Play.Catalog.Contracts.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\dotnet-webapi\Services\Play.Catalog\src\Play.Catalog.Contracts\obj\Debug\net5.0\Play.Catalog.Contracts.sourcelink.json
+C:\Users\Admin\source\repos\dotnet-webapi\Services\Play.Catalog\src\Play.Catalog.Contracts\obj\Debug\net5.0\refint\Play.Catalog.Contracts.dll

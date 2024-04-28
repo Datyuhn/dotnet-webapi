@@ -11,6 +11,8 @@ namespace Play.Inventory.Service.Entities
 
         public Guid CatalogItemId { get; set; }
 
+        public string CatalogItemName { get; set; }
+
         public int Quantity { get; set; }
 
         public DateTimeOffset AcquiredDate { get; set; }

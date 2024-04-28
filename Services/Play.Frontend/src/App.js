@@ -5,6 +5,7 @@ import { Home } from './components/Home';
 import { Catalog } from './components/Catalog';
 import { Inventory } from './components/Inventory';
 import { ApplicationPaths } from './components/Constants';
+import { Login } from './components/Login';
 
 import './App.css'
 
@@ -17,6 +18,7 @@ export default class App extends Component {
         <Route exact path='/' component={Home} />
         <Route path={ApplicationPaths.CatalogPath} component={Catalog} />
         <Route path={ApplicationPaths.InventoryPath} component={Inventory} />
+        <Route path={ApplicationPaths.LoginPath} component={Login} />
       </Layout>
     );
   }
