@@ -20,6 +20,8 @@ export class NavMenu extends Component
                 <Nav.Link as={Link} to="/">Home</Nav.Link>
                 <Nav.Link as={Link} to={ApplicationPaths.CatalogPath}>Catalog</Nav.Link>
                 <Nav.Link as={Link} to={ApplicationPaths.InventoryPath}>Inventory</Nav.Link>
+                <Nav.Link as={Link} to={ApplicationPaths.LoginPath}>Log in</Nav.Link>
+
               </Nav>
             </Navbar.Collapse>
           </Container>

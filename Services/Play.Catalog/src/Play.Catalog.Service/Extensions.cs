@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using Play.Catalog.Service.Dtos;
 using Play.Catalog.Service.Entities;
 

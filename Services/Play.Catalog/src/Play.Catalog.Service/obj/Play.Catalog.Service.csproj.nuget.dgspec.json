@@ -14,7 +14,11 @@
         "outputPath": "D:\\Users\\ADMIN\\Downloads\\Documents\\GitHub\\dotnet-webapi\\Services\\Play.Catalog\\src\\Play.Catalog.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 59f3d49beb5d66c7ad23098599c89f4c14d960a2
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -83,7 +87,11 @@
         "outputPath": "D:\\Users\\ADMIN\\Downloads\\Documents\\GitHub\\dotnet-webapi\\Services\\Play.Catalog\\src\\Play.Catalog.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 59f3d49beb5d66c7ad23098599c89f4c14d960a2
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -127,11 +135,23 @@
                 "NU1605"
               ]
             },
+<<<<<<< HEAD
             "Microsoft.EntityFrameworkCore.Design": {
               "target": "Package",
               "version": "[5.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
+=======
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+>>>>>>> 59f3d49beb5d66c7ad23098599c89f4c14d960a2
               "target": "Package",
               "version": "[5.0.0, )"
             },
@@ -155,6 +175,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+<<<<<<< HEAD
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
@@ -173,6 +194,8 @@
               "version": "[5.0.0, 5.0.0]"
             }
           ],
+=======
+>>>>>>> 59f3d49beb5d66c7ad23098599c89f4c14d960a2
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"

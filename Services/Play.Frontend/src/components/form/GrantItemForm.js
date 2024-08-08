@@ -52,6 +52,7 @@ export default class GrantItemForm extends React.Component
             body: JSON.stringify({
                 userId: this.state.userId,
                 catalogItemId: this.state.id,
+                catalogItemName: this.state.itemName,
                 quantity: parseInt(this.state.quantity)
             })
         })

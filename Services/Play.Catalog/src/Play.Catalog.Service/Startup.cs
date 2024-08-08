@@ -2,10 +2,12 @@ using MassTransit;
 using MassTransit.Definition;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using Play.Catalog.Service.Context;
 using Play.Catalog.Service.Entities;
 using Play.Common.MassTransit;
 using Play.Common.MongoDB;
@@ -30,10 +32,14 @@ namespace Play.Catalog.Service
         public void ConfigureServices(IServiceCollection services)
         {
             serviceSettings = Configuration.GetSection(nameof(ServiceSettings)).Get<ServiceSettings>();
+        
+            services.AddMongo().AddMongoRepository<Item>("items").AddMassTransitWithRabbitMq();
 
-            services.AddMongo()
-                    .AddMongoRepository<Item>("items")
-                    .AddMassTransitWithRabbitMq();
+            services.AddDbContext<CatalogContext>(options =>
+            {
+                options.UseSqlServer(Configuration.GetConnectionString("ItemCS"));
+            });
+
 
             services.AddControllers(options =>
             {

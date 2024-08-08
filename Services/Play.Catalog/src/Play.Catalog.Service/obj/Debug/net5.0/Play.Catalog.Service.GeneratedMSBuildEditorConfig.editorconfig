@@ -8,6 +8,10 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Play.Catalog.Service
+<<<<<<< HEAD
 build_property.ProjectDir = D:\Users\ADMIN\Downloads\Documents\GitHub\dotnet-webapi\Services\Play.Catalog\src\Play.Catalog.Service\
+=======
+build_property.ProjectDir = C:\Users\Admin\source\repos\dotnet-webapi\Services\Play.Catalog\src\Play.Catalog.Service\
+>>>>>>> 59f3d49beb5d66c7ad23098599c89f4c14d960a2
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

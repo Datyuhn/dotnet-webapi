@@ -4,7 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using MassTransit;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Play.Catalog.Contracts;
+using Play.Catalog.Service.Context;
 using Play.Catalog.Service.Dtos;
 using Play.Catalog.Service.Entities;
 using Play.Catalog.Service;
@@ -18,8 +20,10 @@ namespace Play.Catalog.Service.Controllers
     [Route("items")]
     public class ItemsController : ControllerBase
     {
+        private List<Item> itemList;
         private readonly IRepository<Item> itemsRepository;
         private readonly IPublishEndpoint publishEndpoint;
+        private readonly CatalogContext catalogContext;
 
         private readonly CatalogContext catalogContext;
 
@@ -30,12 +34,33 @@ namespace Play.Catalog.Service.Controllers
             //this.catalogContext = catalogContext;
         }
 
+        #region MongoDB
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ItemDto>>> GetAsync()
         {
             var items = (await itemsRepository.GetAllAsync())
                         .Select(item => item.AsDto());
 
+            itemList = items.Select(itemDto => new Item
+            {
+                Id = itemDto.Id,
+                ItemName = itemDto.Name,
+                Description = itemDto.Description,
+                Price = itemDto.Price,
+                CreatedDate = itemDto.CreatedDate,
+                UpdatedDate = itemDto.UpdatedDate
+            }).ToList();
+
+            foreach (var _item in itemList)
+            {
+                var item = catalogContext.Items.Where(e => e.Id == _item.Id).FirstOrDefault();
+                if (item == null)
+                {
+                    catalogContext.Items.Add(_item);
+                }
+            }
+            await catalogContext.SaveChangesAsync();
+            
             return Ok(items);
         }
 
@@ -49,6 +74,12 @@ namespace Play.Catalog.Service.Controllers
             {
                 return NotFound();
             }
+
+            // var _item = await catalogContext.Items.FindAsync(id);
+            // if (_item == null)
+            // {
+            //     return NotFound();
+            // }
 
             return item.AsDto();
         }
@@ -92,6 +123,9 @@ namespace Play.Catalog.Service.Controllers
             existingItem.Price = updateItemDto.Price;
             existingItem.UpdatedDate = DateTimeOffset.UtcNow;
 
+            catalogContext.Entry(existingItem).State = EntityState.Modified;
+            await catalogContext.SaveChangesAsync();
+
             await itemsRepository.UpdateAsync(existingItem);
 
             await publishEndpoint.Publish(new CatalogItemUpdated(existingItem.Id, existingItem.ItemName, existingItem.Description, existingItem.UpdatedDate));
@@ -110,11 +144,15 @@ namespace Play.Catalog.Service.Controllers
                 return NotFound();
             }
 
+            catalogContext.Items.Remove(item);
+            await catalogContext.SaveChangesAsync();
+
             await itemsRepository.RemoveAsync(item.Id);
 
             await publishEndpoint.Publish(new CatalogItemDeleted(id));
 
             return NoContent();
         }
-    }
+        #endregion
+    }    
 }
