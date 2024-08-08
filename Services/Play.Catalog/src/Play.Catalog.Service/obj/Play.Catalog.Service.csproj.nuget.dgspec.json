@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\source\\repos\\dotnet-webapi\\Services\\Play.Catalog\\src\\Play.Catalog.Service\\Play.Catalog.Service.csproj": {}
+    "D:\\Users\\ADMIN\\Downloads\\Documents\\GitHub\\dotnet-webapi\\Services\\Play.Catalog\\src\\Play.Catalog.Service\\Play.Catalog.Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\source\\repos\\dotnet-webapi\\Services\\Play.Catalog\\src\\Play.Catalog.Contracts\\Play.Catalog.Contracts.csproj": {
+    "D:\\Users\\ADMIN\\Downloads\\Documents\\GitHub\\dotnet-webapi\\Services\\Play.Catalog\\src\\Play.Catalog.Contracts\\Play.Catalog.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\dotnet-webapi\\Services\\Play.Catalog\\src\\Play.Catalog.Contracts\\Play.Catalog.Contracts.csproj",
+        "projectUniqueName": "D:\\Users\\ADMIN\\Downloads\\Documents\\GitHub\\dotnet-webapi\\Services\\Play.Catalog\\src\\Play.Catalog.Contracts\\Play.Catalog.Contracts.csproj",
         "projectName": "Play.Catalog.Contracts",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\dotnet-webapi\\Services\\Play.Catalog\\src\\Play.Catalog.Contracts\\Play.Catalog.Contracts.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\dotnet-webapi\\Services\\Play.Catalog\\src\\Play.Catalog.Contracts\\obj\\",
+        "projectPath": "D:\\Users\\ADMIN\\Downloads\\Documents\\GitHub\\dotnet-webapi\\Services\\Play.Catalog\\src\\Play.Catalog.Contracts\\Play.Catalog.Contracts.csproj",
+        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\ADMIN\\Downloads\\Documents\\GitHub\\dotnet-webapi\\Services\\Play.Catalog\\src\\Play.Catalog.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,43 +45,60 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Admin\\source\\repos\\dotnet-webapi\\Services\\Play.Catalog\\src\\Play.Catalog.Service\\Play.Catalog.Service.csproj": {
+    "D:\\Users\\ADMIN\\Downloads\\Documents\\GitHub\\dotnet-webapi\\Services\\Play.Catalog\\src\\Play.Catalog.Service\\Play.Catalog.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\dotnet-webapi\\Services\\Play.Catalog\\src\\Play.Catalog.Service\\Play.Catalog.Service.csproj",
+        "projectUniqueName": "D:\\Users\\ADMIN\\Downloads\\Documents\\GitHub\\dotnet-webapi\\Services\\Play.Catalog\\src\\Play.Catalog.Service\\Play.Catalog.Service.csproj",
         "projectName": "Play.Catalog.Service",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\dotnet-webapi\\Services\\Play.Catalog\\src\\Play.Catalog.Service\\Play.Catalog.Service.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\dotnet-webapi\\Services\\Play.Catalog\\src\\Play.Catalog.Service\\obj\\",
+        "projectPath": "D:\\Users\\ADMIN\\Downloads\\Documents\\GitHub\\dotnet-webapi\\Services\\Play.Catalog\\src\\Play.Catalog.Service\\Play.Catalog.Service.csproj",
+        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\ADMIN\\Downloads\\Documents\\GitHub\\dotnet-webapi\\Services\\Play.Catalog\\src\\Play.Catalog.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\source\\repos\\dotnet-webapi\\Services\\Play.Catalog\\src\\Play.Catalog.Contracts\\Play.Catalog.Contracts.csproj": {
-                "projectPath": "C:\\Users\\Admin\\source\\repos\\dotnet-webapi\\Services\\Play.Catalog\\src\\Play.Catalog.Contracts\\Play.Catalog.Contracts.csproj"
+              "D:\\Users\\ADMIN\\Downloads\\Documents\\GitHub\\dotnet-webapi\\Services\\Play.Catalog\\src\\Play.Catalog.Contracts\\Play.Catalog.Contracts.csproj": {
+                "projectPath": "D:\\Users\\ADMIN\\Downloads\\Documents\\GitHub\\dotnet-webapi\\Services\\Play.Catalog\\src\\Play.Catalog.Contracts\\Play.Catalog.Contracts.csproj"
               }
             }
           }
@@ -108,6 +127,14 @@
                 "NU1605"
               ]
             },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "Play.Common": {
               "target": "Package",
               "version": "[1.0.2, )"
@@ -123,14 +150,27 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
           "downloadDependencies": [
             {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
               "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[5.0.12, 5.0.12]"
+              "version": "[5.0.17, 5.0.17]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
             }
           ],
           "frameworkReferences": {
@@ -141,7 +181,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

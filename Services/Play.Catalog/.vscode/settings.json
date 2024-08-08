@@ -1,0 +1,20 @@
+{
+    "sqltools.connections": [
+        {
+            "mssqlOptions": {
+                "appName": "SQLTools",
+                "useUTC": true,
+                "encrypt": true
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3000,
+            "driver": "MSSQL",
+            "name": "catalog",
+            "database": "CatalogDB",
+            "username": "root",
+            "password": "12345678",
+            "connectionTimeout": 10000
+        }
+    ]
+}

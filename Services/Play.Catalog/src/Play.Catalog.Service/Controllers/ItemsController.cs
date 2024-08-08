@@ -7,7 +7,10 @@ using Microsoft.AspNetCore.Mvc;
 using Play.Catalog.Contracts;
 using Play.Catalog.Service.Dtos;
 using Play.Catalog.Service.Entities;
+using Play.Catalog.Service;
 using Play.Common;
+// using Play.Catalog.Service.Migrations;
+using var catalogDB = new CatalogContext();
 
 namespace Play.Catalog.Service.Controllers
 {
@@ -18,10 +21,13 @@ namespace Play.Catalog.Service.Controllers
         private readonly IRepository<Item> itemsRepository;
         private readonly IPublishEndpoint publishEndpoint;
 
-        public ItemsController(IRepository<Item> itemsRepository, IPublishEndpoint publishEndpoint)
+        private readonly CatalogContext catalogContext;
+
+        public ItemsController(IRepository<Item> itemsRepository, IPublishEndpoint publishEndpoint, CatalogContext catalogContext)
         {
             this.itemsRepository = itemsRepository;
             this.publishEndpoint = publishEndpoint;
+            //this.catalogContext = catalogContext;
         }
 
         [HttpGet]
@@ -59,6 +65,9 @@ namespace Play.Catalog.Service.Controllers
                 CreatedDate = DateTimeOffset.UtcNow,
                 UpdatedDate = DateTimeOffset.UtcNow
             };
+
+            // catalogContext.Items.Add(item);
+            // catalogContext.SaveChanges();
 
             await itemsRepository.CreateAsync(item);
 

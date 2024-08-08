@@ -5716,24 +5716,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\pc\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\dotnet-webapi\\Services\\Play.Common\\src\\Play.Common\\Play.Common.csproj",
+      "projectUniqueName": "D:\\Users\\ADMIN\\Downloads\\Documents\\GitHub\\dotnet-webapi\\Services\\Play.Common\\src\\Play.Common\\Play.Common.csproj",
       "projectName": "Play.Common",
-      "projectPath": "C:\\Users\\Admin\\source\\repos\\dotnet-webapi\\Services\\Play.Common\\src\\Play.Common\\Play.Common.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\source\\repos\\dotnet-webapi\\Services\\Play.Common\\src\\Play.Common\\obj\\",
+      "projectPath": "D:\\Users\\ADMIN\\Downloads\\Documents\\GitHub\\dotnet-webapi\\Services\\Play.Common\\src\\Play.Common\\Play.Common.csproj",
+      "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
+      "outputPath": "D:\\Users\\ADMIN\\Downloads\\Documents\\GitHub\\dotnet-webapi\\Services\\Play.Common\\src\\Play.Common\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\pc\\source\\repos\\dotnet-webapi-main\\packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
